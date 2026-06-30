@@ -1,3 +1,2 @@
-export { Container } from "./Container";
-
-export type { ContainerProps } from "./container.types";
+export * from "./Container";
+export type * from "./container.types";

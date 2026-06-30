@@ -1,36 +1,36 @@
-import { BriefcaseBusiness } from "lucide-react";
+import { BriefcaseBusiness, TrendingUp, Building2, Smile } from "lucide-react";
+import type { Stat } from "@/types";
 
-// export const statsData = [
-//   {
-//     value: 50,
-//     suffix: "+",
-//     title: "Projets accompagnés",
-//     description: "Entreprises accompagnées dans leur croissance.",
-//     icon: BriefcaseBusiness,
-//   },
-//   // ...
-// ];
-
-export const statsData = [
+export const statsData: Stat[] = [
   {
-    value: 120,
+    value: 50,
     suffix: "+",
-    label: "Projets accompagnés",
-    description:
-      "Des entreprises accompagnées dans leur transformation digitale.",
+    title: "Projets accompagnés",
+    description: "Des entreprises accompagnées dans leur croissance.",
     icon: BriefcaseBusiness,
   },
+
   {
-    value: 85,
+    value: 30,
     suffix: "%",
-    label: "Croissance moyenne",
-    description: "Une approche orientée performance et résultats mesurables.",
+    title: "Croissance moyenne",
+    description: "Une progression mesurable des performances.",
+    icon: TrendingUp,
   },
+
   {
     value: 10,
-    suffix: " ans",
-    label: "D'expérience",
-    description:
-      "Une expertise construite autour du digital et de la stratégie.",
+    suffix: "+",
+    title: "Secteurs d'activité",
+    description: "Une expertise multisectorielle.",
+    icon: Building2,
+  },
+
+  {
+    value: 95,
+    suffix: "%",
+    title: "Satisfaction client",
+    description: "Des partenariats fondés sur la confiance.",
+    icon: Smile,
   },
 ];

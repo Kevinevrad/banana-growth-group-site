@@ -2,11 +2,13 @@ import { cn } from "@/lib/utils";
 
 interface BadgeProps {
   children: React.ReactNode;
+  variant?: string;
 }
 
-export function Badge({ children }: BadgeProps) {
+export function Badge({ children, variant }: BadgeProps) {
   return (
     <span
+      Variant={variant}
       className={cn(
         "inline-flex",
 

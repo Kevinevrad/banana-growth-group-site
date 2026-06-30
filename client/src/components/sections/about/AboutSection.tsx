@@ -20,24 +20,15 @@ export function AboutSection({
   values,
 }: AboutSectionProps) {
   return (
-    <Section id="about">
+    <Section id="about" className="vision-section">
       <Container>
         <SectionHeader
           eyebrow={eyebrow}
-
           title={title}
-
           description={description}
         />
 
-        <div
-          className="
-mt-16
-grid
-md:grid-cols-3
-gap-8
-"
-        >
+        <div className="mt-16 grid md:grid-cols-3 gap-8">
           {values.map((item, index) => (
             <motion.div
               key={item.title}
@@ -60,7 +51,7 @@ gap-8
                 once: true,
               }}
             >
-              <Card>
+              <Card className="border border-[#eee]">
                 <Typography
                   variant="h3"
 

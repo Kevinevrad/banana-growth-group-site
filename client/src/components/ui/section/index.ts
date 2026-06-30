@@ -1,3 +1,4 @@
-export { Section } from "./Section";
-
-export type { SectionProps } from "./section.types";
+export * from "./Section";
+export * from "./SectionHeader";
+export * from "./SectionLayout";
+export type * from "./section.types";

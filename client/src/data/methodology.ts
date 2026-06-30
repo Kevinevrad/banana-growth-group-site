@@ -1,31 +1,6 @@
-// export const methodologyData = [
-//   {
-//     step: "01",
-//     title: "Analyse",
-//     description:
-//       "Comprendre votre environnement, vos objectifs et vos opportunités.",
-//   },
+import type { MethodologyStep } from "@/types";
 
-//   {
-//     step: "02",
-//     title: "Stratégie",
-//     description: "Définir un plan d'action clair et mesurable.",
-//   },
-
-//   {
-//     step: "03",
-//     title: "Exécution",
-//     description: "Déployer les actions avec rigueur et suivi.",
-//   },
-
-//   {
-//     step: "04",
-//     title: "Optimisation",
-//     description: "Mesurer, apprendre et améliorer continuellement.",
-//   },
-// ];
-
-export const methodologyData = [
+export const methodologyData: MethodologyStep[] = [
   {
     step: "01",
 

@@ -16,8 +16,36 @@ body {
   margin: 0;
 
   font-family: var(--font-sans);
-
   background: var(--background);
 
   color: var(--foreground);
+}
+
+.vision-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.vision-section::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, var(--yellow-200), transparent 70%);
+  top: -200px;
+  right: -150px;
+  opacity: 0.35;
+  filter: blur(30px);
+}
+
+.vision-section::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, var(--yellow-200), transparent 70%);
+  bottom: -200px;
+  left: -150px;
+  opacity: 0.35;
+  filter: blur(30px);
 }

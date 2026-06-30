@@ -20,6 +20,7 @@ export function HeroSection({
       className="
 relative
 overflow-hidden
+ 
 "
     >
       <Container>
@@ -48,16 +49,7 @@ items-center
           >
             {badge && <Badge>{badge}</Badge>}
 
-            <Typography
-              variant="h1"
-
-              as="h1"
-
-              className="
-mt-6
-max-w-3xl
-"
-            >
+            <Typography variant="h1" as="h1" className="mt-6max-w-3xl">
               {title}
             </Typography>
 

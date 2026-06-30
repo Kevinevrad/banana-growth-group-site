@@ -11,6 +11,7 @@ export const aboutData = {
       title: "Approche stratégique",
       description:
         "Chaque décision repose sur des données et une compréhension précise du marché.",
+      // icon :
     },
 
     {

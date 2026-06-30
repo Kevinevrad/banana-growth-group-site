@@ -1,34 +1,28 @@
+import { Slot } from "@radix-ui/react-slot";
+
 import { cn } from "@/lib/utils";
 
 import type { ContainerProps } from "./container.types";
 
 export function Container({
-  size = "lg",
+  asChild = false,
   className,
-  children,
   ...props
 }: ContainerProps) {
-  const sizes = {
-    sm: "max-w-3xl",
-
-    md: "max-w-5xl",
-
-    lg: "max-w-7xl",
-  };
+  const Comp = asChild ? Slot : "div";
 
   return (
-    <div
+    <Comp
       className={cn(
-        "mx-auto w-full px-6",
-
-        sizes[size],
-
+        "mx-auto",
+        "w-full",
+        "max-w-7xl",
+        "px-4",
+        "sm:px-6",
+        "lg:px-8",
         className,
       )}
-
       {...props}
-    >
-      {children}
-    </div>
+    />
   );
 }

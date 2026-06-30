@@ -1,32 +1,29 @@
-export interface NavigationItem {
-  label: string;
-
-  href: string;
-}
+import type { NavigationItem } from "@/components/navigation/navigation.types";
 
 export const navigationItems: NavigationItem[] = [
   {
     label: "Accueil",
-    href: "#home",
+    to: "/",
   },
-
+  {
+    label: "À propos",
+    to: "/about",
+  },
   {
     label: "Services",
-    href: "#services",
+    to: "/services",
   },
-
-  {
-    label: "Méthode",
-    href: "#methodology",
-  },
-
   {
     label: "Réalisations",
-    href: "#projects",
+    to: "/projects",
   },
-
   {
     label: "Contact",
-    href: "#contact",
+    to: "/contact",
   },
 ];
+
+export const navigationCTA = {
+  label: "Prendre rendez-vous",
+  to: "/contact",
+} as const;

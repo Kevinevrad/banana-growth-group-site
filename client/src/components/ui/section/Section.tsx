@@ -1,32 +1,13 @@
 import { cn } from "@/lib/utils";
 
+import { Container } from "../container";
+
 import type { SectionProps } from "./section.types";
 
-export function Section({
-  spacing = "lg",
-  className,
-  children,
-  ...props
-}: SectionProps) {
-  const spaces = {
-    sm: "py-12",
-
-    md: "py-20",
-
-    lg: "py-32",
-  };
-
+export function Section({ className, children, ...props }: SectionProps) {
   return (
-    <section
-      className={cn(
-        spaces[spacing],
-
-        className,
-      )}
-
-      {...props}
-    >
-      {children}
+    <section className={cn("py-20", "lg:py-28", className)} {...props}>
+      <Container>{children}</Container>
     </section>
   );
 }
