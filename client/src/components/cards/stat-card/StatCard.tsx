@@ -58,9 +58,9 @@ export function StatCard({
         </div>
 
         <div className="space-y-2">
-          <h3 className="text-xl font-semibold">{title}</h3>
+          <h3 className="text-xl font-semibold text-brand-dark">{title}</h3>
 
-          <p className="text-sm leading-7 text-slate-600">{description}</p>
+          <p className="text-sm leading-7 text-brand-muted">{description}</p>
         </div>
       </div>
     </Card>

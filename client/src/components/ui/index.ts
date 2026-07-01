@@ -6,10 +6,11 @@ export * from "./section";
 export * from "./typography";
 export * from "./card";
 export * from "./accordion";
+export * from "./logo/logo";
 export * from "./badge";
 export * from "./button";
 export * from "./card";
-
+export * from "./logo";
 export * from "./container";
 export * from "./section";
 // export * from "./section-header";

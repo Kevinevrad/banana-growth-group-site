@@ -30,7 +30,7 @@ export function Typography({
 
     body: "text-base leading-relaxed",
 
-    muted: "text-sm text-slate-500",
+    muted: "text-sm text-brand-muted",
   };
 
   return (

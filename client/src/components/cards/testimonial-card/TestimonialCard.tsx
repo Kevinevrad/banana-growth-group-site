@@ -21,14 +21,14 @@ export function TestimonialCard({ testimonial }: TestimonialCardProps) {
       <div className="flex h-full flex-col justify-between gap-8">
         <Quote className="h-10 w-10 text-brand-yellow" />
 
-        <blockquote className="text-lg leading-8 text-slate-700">
+        <blockquote className="text-lg leading-8 text-brand-dark">
           “{testimonial.quote}”
         </blockquote>
 
-        <div className="border-t pt-6">
+        <div className="border-t border-brand-border pt-6">
           <p className="font-semibold text-brand-dark">{testimonial.author}</p>
 
-          <p className="text-sm text-slate-500">{testimonial.position}</p>
+          <p className="text-sm text-brand-muted">{testimonial.position}</p>
 
           <p className="text-sm font-medium text-brand-yellow-700">
             {testimonial.company}

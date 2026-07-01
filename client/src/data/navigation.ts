@@ -14,6 +14,10 @@ export const navigationItems: NavigationItem[] = [
     to: "/services",
   },
   {
+    label: "Méthodologie",
+    to: "/methodology",
+  },
+  {
     label: "Réalisations",
     to: "/projects",
   },

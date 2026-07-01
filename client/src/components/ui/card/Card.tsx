@@ -12,9 +12,9 @@ export function Card({
   ...props
 }: CardProps) {
   const variants = {
-    default: "bg-white shadow-[var(--shadow-card)]",
+    default: "bg-white/95 shadow-[var(--shadow-card)]",
 
-    bordered: "border border-slate-200",
+    bordered: "border border-brand-border bg-white/90",
   };
 
   return (

@@ -32,7 +32,7 @@ text-sm
 font-semibold
 uppercase
 tracking-wider
-text-slate-500
+text-brand-yellow
 "
         >
           {eyebrow}
@@ -44,7 +44,7 @@ text-slate-500
 
         as="h2"
 
-        className="mt-3"
+        className="mt-3 text-brand-dark"
       >
         {title}
       </Typography>
@@ -55,7 +55,7 @@ text-slate-500
 
           className="
 mt-4
-text-slate-600
+text-brand-muted
 "
         >
           {description}

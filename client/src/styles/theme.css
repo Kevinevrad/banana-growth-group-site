@@ -54,9 +54,50 @@
   --radius-xl: 1.5rem;
   --radius-full: 9999px;
 
+  /* COLORS */
+  --brand-yellow: #ffd600;
+  --brand-yellow-50: #fff9d6;
+  --brand-yellow-100: #fff3ad;
+  --brand-yellow-200: #ffe873;
+  --brand-yellow-300: #ffdc45;
+  --brand-yellow-400: #ffd000;
+  --brand-yellow-500: #f7c300;
+  --brand-yellow-600: #d09a00;
+  --brand-yellow-700: #a87500;
+  --brand-yellow-800: #785100;
+  --brand-yellow-900: #4f3600;
+
+  --brand-dark: #0f172a;
+  --brand-dark-700: #1f2937;
+  --brand-dark-800: #111827;
+  --brand-dark-900: #0b1220;
+
+  --brand-surface: #f8faff;
+  --brand-muted: #64748b;
+  --brand-border: #e2e8f0;
+
+  --brand-yellow-rgb: 255 214 0;
+  --brand-dark-rgb: 15 23 42;
+
   /* ANIMATIONS  */
   --duration-fast: 150ms;
   --duration-normal: 300ms;
   --duration-slow: 500ms;
   --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --shadow-card: 0 30px 60px rgba(15, 23, 42, 0.08);
+
+  --background:
+    radial-gradient(
+      circle at top left,
+      rgba(255, 214, 0, 0.12),
+      transparent 20%
+    ),
+    radial-gradient(
+      circle at 80% 10%,
+      rgba(255, 239, 134, 0.18),
+      transparent 18%
+    ),
+    #fcfbff;
+  --foreground: #0f172a;
 }

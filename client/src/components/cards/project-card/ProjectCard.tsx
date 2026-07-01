@@ -54,27 +54,29 @@ export function ProjectCard({ project }: ProjectCardProps) {
         </div>
 
         <div>
-          <h3 className="text-2xl font-bold">{project.title}</h3>
+          <h3 className="text-2xl font-bold text-brand-dark">
+            {project.title}
+          </h3>
 
-          <p className="mt-2 text-slate-600">{project.description}</p>
-        </div>
+          <p className="mt-2 text-brand-muted">{project.description}</p>
 
-        <div className="grid grid-cols-3 gap-4">
-          {project.metrics.map((metric) => (
-            <div key={metric.label}>
-              <p className="text-2xl font-bold">{metric.value}</p>
+          <div className="grid grid-cols-3 gap-4">
+            {project.metrics.map((metric) => (
+              <div key={metric.label}>
+                <p className="text-2xl font-bold">{metric.value}</p>
 
-              <p className="text-sm text-slate-500">{metric.label}</p>
-            </div>
-          ))}
-        </div>
+                <p className="text-sm text-slate-500">{metric.label}</p>
+              </div>
+            ))}
+          </div>
 
-        <div className="flex flex-wrap gap-2">
-          {project.tags.map((tag) => (
-            <Badge key={tag} variant="secondary">
-              {tag}
-            </Badge>
-          ))}
+          <div className="flex flex-wrap gap-2">
+            {project.tags.map((tag) => (
+              <Badge key={tag} variant="secondary">
+                {tag}
+              </Badge>
+            ))}
+          </div>
         </div>
       </div>
     </Card>

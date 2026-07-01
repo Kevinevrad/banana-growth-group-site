@@ -51,7 +51,7 @@ export function AboutSection({
                 once: true,
               }}
             >
-              <Card className="border border-[#eee]">
+              <Card className="border border-brand-border bg-white/90">
                 <Typography
                   variant="h3"
 
@@ -65,7 +65,7 @@ export function AboutSection({
 
                   className="
 mt-4
-text-slate-600
+text-brand-muted
 "
                 >
                   {item.description}

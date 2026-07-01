@@ -47,7 +47,7 @@ export function CTASection({ content }: CTASectionProps) {
               mt-6
               text-lg
               leading-8
-              text-slate-300
+              text-white/80
             "
           >
             {content.description}

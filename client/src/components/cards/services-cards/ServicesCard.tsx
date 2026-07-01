@@ -7,11 +7,11 @@ export function ServiceCard({ title, description, icon }: ServiceCardProps) {
     <Card className=" h-full hover:shadow-xl">
       <IconBox icon={icon} />
 
-      <Typography variant="h3" as="h3" className=" mt-6">
+      <Typography variant="h3" as="h3" className=" mt-6 text-brand-dark">
         {title}
       </Typography>
 
-      <Typography variant="body" className="mt-4 text-slate-600">
+      <Typography variant="body" className="mt-4 text-brand-muted">
         {description}
       </Typography>
     </Card>

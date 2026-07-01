@@ -26,7 +26,7 @@ export function FAQSection({ items }: FAQSectionProps) {
                 {item.question}
               </AccordionTrigger>
 
-              <AccordionContent className="text-base leading-7 text-slate-600">
+              <AccordionContent className="text-base leading-7 text-brand-muted">
                 {item.answer}
               </AccordionContent>
             </AccordionItem>

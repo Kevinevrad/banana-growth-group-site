@@ -16,7 +16,11 @@ export function IconBox({ icon: Icon }: IconBoxProps) {
 
         "rounded-xl",
 
-        "bg-yellow-400",
+        "bg-brand-yellow",
+
+        "text-brand-dark",
+
+        "shadow-[0_18px_50px_-32px_rgba(255,214,0,0.9)]",
       )}
     >
       <Icon size={22} />

@@ -14,11 +14,60 @@ html {
 
 body {
   margin: 0;
-
+  min-height: 100vh;
   font-family: var(--font-sans);
   background: var(--background);
-
   color: var(--foreground);
+}
+
+button,
+a {
+  transition: color var(--duration-normal), background-color var(--duration-normal), border-color var(--duration-normal), transform var(--duration-normal);
+}
+
+a {
+  color: var(--brand-dark);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--brand-yellow);
+}
+
+.bg-brand-dark {
+  background-color: var(--brand-dark);
+}
+
+.bg-brand-surface {
+  background-color: var(--brand-surface);
+}
+
+.bg-brand-yellow {
+  background-color: var(--brand-yellow);
+}
+
+.bg-brand-yellow\/10 {
+  background-color: rgba(var(--brand-yellow-rgb), 0.1);
+}
+
+.bg-brand-dark\/10 {
+  background-color: rgba(var(--brand-dark-rgb), 0.1);
+}
+
+.text-brand-dark {
+  color: var(--brand-dark);
+}
+
+.text-brand-yellow {
+  color: var(--brand-yellow);
+}
+
+.text-brand-yellow-700 {
+  color: var(--brand-yellow-700);
+}
+
+.border-brand {
+  border-color: var(--brand-border);
 }
 
 .vision-section {
@@ -31,11 +80,11 @@ body {
   position: absolute;
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, var(--yellow-200), transparent 70%);
-  top: -200px;
-  right: -150px;
-  opacity: 0.35;
-  filter: blur(30px);
+  background: radial-gradient(circle, rgba(255, 214, 0, 0.2), transparent 70%);
+  top: -220px;
+  right: -130px;
+  opacity: 0.5;
+  filter: blur(40px);
 }
 
 .vision-section::after {
@@ -43,9 +92,9 @@ body {
   position: absolute;
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, var(--yellow-200), transparent 70%);
-  bottom: -200px;
-  left: -150px;
+  background: radial-gradient(circle, rgba(15, 23, 42, 0.08), transparent 70%);
+  bottom: -220px;
+  left: -130px;
   opacity: 0.35;
-  filter: blur(30px);
+  filter: blur(40px);
 }
