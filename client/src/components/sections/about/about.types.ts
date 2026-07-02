@@ -7,7 +7,7 @@ export interface AboutSectionProps {
 
   values: Array<{
     title: string;
-
+    // icon: Array<ReactNode>;
     description: string;
   }>;
 }

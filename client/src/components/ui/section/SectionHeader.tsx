@@ -54,7 +54,7 @@ export function SectionHeader({
         <p
           className="
             mt-6
-            text-lg
+            text-[1.6rem]
             leading-8
             text-slate-600
           "

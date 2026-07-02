@@ -10,6 +10,12 @@ import {
 
 import type { AboutSectionProps } from "./about.types";
 
+import Orientation from "@/assets/icons/route.png";
+import Pratique from "@/assets/icons/pratique.png";
+import Approche from "@/assets/icons/strategie-dentreprise.png";
+
+const icons = [Approche, Orientation, Pratique];
+
 export function AboutSection({
   eyebrow,
 
@@ -52,6 +58,15 @@ export function AboutSection({
               }}
             >
               <Card className="border border-brand-border bg-white/90">
+                <div className="flex   justify-start   rounded-full bg-brand-accent/10">
+                  <img
+                    src={icons[index]}
+                    alt={item.title}
+                    width="200px"
+
+                    className="h-35 w-35  p-4"
+                  />
+                </div>
                 <Typography
                   variant="h3"
 
@@ -63,9 +78,7 @@ export function AboutSection({
                 <Typography
                   variant="body"
 
-                  className="
-mt-4
-text-brand-muted
+                  className=" text-sm mt-4  
 "
                 >
                   {item.description}
